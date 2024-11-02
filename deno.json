@@ -1,0 +1,10 @@
+{
+  "deploy": {
+    "project": "pseudo-WFC-mg",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "index.html"
+  }
+}

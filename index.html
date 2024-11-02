@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js wfc example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #1b1b1b;
+    }
+    .control {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      padding: 30px;
+      margin-left: 80vw;
+      margin-top: 10vh;
+      background: white;
+      width: 150px;
+      height: 250px;
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+    }
+    .warn {
+      text-align: center;
+      font-size: medium;
+      font-weight: bold;
+      margin: 5px;
+      background-color: rgb(230, 197, 173);
+    }
+    .tile{
+      margin-top: 5px;
+      display: block;
+    }
+  </style>
+  <script src="p5.min.js"></script>
+  <div class="control">
+    <input type="number" min=1 value=10 id="cell" placeholder="number of cells">
+    <input type="number" min=1 value=20 id="size" placeholder="cell size">
+    <input type="number" min=1 max=11 value=11 id="empty_tile" placeholder="the tile when there is no match">
+    <input type="button" id="submit" value="submit">
+    <div class="warn">
+      High values can cause bugs or crash
+    </div>
+    <div class="tile">
+      <img src="ressource/t1.png" width="10px" height="10px">1
+      <img src="ressource/t2.png" width="10px" height="10px">2
+      <img src="ressource/t3.png" width="10px" height="10px">3
+      <img src="ressource/t4.png" width="10px" height="10px">4
+      <img src="ressource/t5.png" width="10px" height="10px">5
+      <img src="ressource/t6.png" width="10px" height="10px">6
+      <img src="ressource/t7.png" width="10px" height="10px">7
+      <img src="ressource/t8.png" width="10px" height="10px">8
+      <img src="ressource/t9.png" width="10px" height="10px">9
+      <img src="ressource/t10.png" width="10px" height="10px">10
+      <img src="ressource/t11.png" width="10px" height="10px">11
+    </div>
+  </div>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="ressource/wfc.js"></script>
+  <script src="ressource/sketch.js"></script>
+</head>
+
+<body>
+  <main>
+  </main>
+</body>
+
+</html>
