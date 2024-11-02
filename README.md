@@ -3,6 +3,7 @@ map generator inspired by wfc algorithm
 
 # Class
 wfc(cell = 10,size = 10, presets = [], sprite = [], empty_tile = 1)
+
 -cell: On x and y
 -size: cell size
 -presets: map example with tile
